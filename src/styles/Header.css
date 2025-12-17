@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(46, 46, 46);
+}
+
+.header > * {
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.hamburgerContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  align-content: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburgerContainer img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttons button {
+  font-size: 14px;
+}
+
+.signupbtn {
+  background-color: rgb(46, 46, 46);
+  color: gray;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: all 0.2s;
+}
+
+.signupbtn:hover {
+  font-size: 15px;
+  color: white;
+}
+
+.loginbtn {
+  background-color: white;
+  color: black;
+  border: 1px solid #b3b3b3;
+  padding: 8px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  box-sizing: border-box;
+}
+
+.loginbtn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1400px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    position: relative;
+    top: 7px;
+  }
+
+  .header > * {
+    padding: 6px;
+    display: inline;
+  }
+}

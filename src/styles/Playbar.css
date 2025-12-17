@@ -1,0 +1,146 @@
+.playbar {
+  bottom: 20px;
+  border-radius: 10px;
+  background-color: #d6d4d4;
+  filter: invert(1);
+  width: 68vw;
+  height: 48px;
+  position: fixed;
+}
+
+.seekbar {
+  height: 4px;
+  width: 100%;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.circle {
+  position: relative;
+  bottom: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 13px;
+  background-color: black;
+  transition: left 0.5s;
+}
+
+.abovebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.songinfo {
+  position: relative;
+  filter: invert(1);
+  font-size: 14px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.songbuttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.songbuttons img {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+}
+
+.songtime {
+  filter: invert(1);
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.volume img {
+  height: 22px;
+  width: 22px;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+}
+
+.range input[type="range"] {
+  width: 80px;
+  height: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .playbar {
+    width: 89vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .playbar {
+    width: 80vw;
+  }
+
+  .song {
+    width: 138px;
+  }
+}
+
+@media (max-width: 550px) {
+  .songinfo {
+    font-size: 11px;
+  }
+
+  .songbuttons {
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .songbuttons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .songtime {
+    font-size: 10px;
+  }
+
+  .song {
+    width: 110px;
+    gap: 10px;
+  }
+
+  .volume img {
+    height: 19px;
+  }
+
+  .range input[type="range"] {
+    width: 51px;
+  }
+}

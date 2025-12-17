@@ -1,0 +1,11 @@
+.right {
+  width: 70vw;
+  margin: 20px;
+  position: relative;
+}
+
+@media (max-width: 1400px) {
+  .right {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,82 @@
+.trendingSongs {
+  color: white;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.trendingSongs h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 5px;
+  overflow-y: scroll;
+  max-height: 70vh;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 8px;
+  width: 160px;
+  padding: 7px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  background-color: rgb(64, 63, 63);
+  --play-opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card h2 {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  margin: 0 0 3px 0;
+}
+
+.card p {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin: 0;
+  line-height: 1.4;
+  padding: 1px;
+}
+
+.play {
+  width: 48px;
+  height: 48px;
+  background-color: #1fdf64;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 110px;
+  right: 12px;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.card:hover .play {
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 50vw;
+  }
+}
