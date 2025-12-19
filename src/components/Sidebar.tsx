@@ -15,7 +15,10 @@ const Sidebar: React.FC<SidebarProps> = ({ children, isOpen, onClose }) => {
       </div>
       <div className="home bg-grey rounded m-1 p-1">
         <div className="logo">
-          <img className="invert" src="/assets/logo.svg" alt="Soundify Logo" />
+          <img className="" src="/assets/soundify-logo.png" alt="Soundify Logo" style={{
+            width: '200px',
+            height: '70px'
+          }} />
         </div>
         <ul>
           <li>
