@@ -15,7 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children, isOpen, onClose }) => {
       </div>
       <div className="home bg-grey rounded m-1 p-1">
         <div className="logo">
-          <img className="invert" src="/assets/logo.svg" alt="Spotify Logo" />
+          <img className="invert" src="/assets/logo.svg" alt="Soundify Logo" />
         </div>
         <ul>
           <li>
@@ -52,30 +52,30 @@ const Sidebar: React.FC<SidebarProps> = ({ children, isOpen, onClose }) => {
         <div className="songList">{children}</div>
         <div className="footer">
           <div>
-            <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+            <a href="https://www.linkedin.com/in/dia-dalal-63280b23b/">Legal</a>
           </div>
           <div>
-            <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+            <a href="https://www.linkedin.com/in/dia-dalal-63280b23b/">
               Safety and Privacy Center
             </a>
           </div>
           <div>
-            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+            <a href="https://www.linkedin.com/in/dia-dalal-63280b23b/">
               Privacy Policy
             </a>
           </div>
           <div>
-            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+            <a href="https://www.linkedin.com/in/dia-dalal-63280b23b/">
               Cookies
             </a>
           </div>
           <div>
-            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+            <a href="https://www.linkedin.com/in/dia-dalal-63280b23b/">
               About Ads
             </a>
           </div>
           <div>
-            <a href="https://www.spotify.com/in-en/accessibility/">
+            <a href="https://www.linkedin.com/in/dia-dalal-63280b23b/">
               Accessibility
             </a>
           </div>

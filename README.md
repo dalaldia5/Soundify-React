@@ -1,6 +1,6 @@
 # Soundify React
 
-A Spotify clone built with React and TypeScript.
+A Music app built with React and TypeScript.
 
 ## Features
 
